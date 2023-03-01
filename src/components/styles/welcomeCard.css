@@ -1,0 +1,11 @@
+.welcomeCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.welcomeCard__message {
+  color: gray;font-size: 20px;
+}

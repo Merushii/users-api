@@ -1,0 +1,37 @@
+
+.navbar{
+  background-color: var(--navy-blue);
+  margin: 0;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  color: white;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.navbar__title{
+  margin: 0;
+}
+
+.navbar__addBtn{
+  display: flex;
+  align-items: center;
+  background-color: var(--blue-sky);
+  padding: 5px;
+  color: white;
+  border: none;
+  gap: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.navbar__addBtn:hover{
+  background-color: var(--purple-blue);
+  cursor: pointer;
+}
+
+.navbar__addBtn i{
+  font-size: 30px;
+  display: flex;
+}

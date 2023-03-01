@@ -1,0 +1,27 @@
+:root{
+  --purple-blue: #797EF6;
+  --turqouise: #4ADEDE;
+  --blue-sky: #1AA7EC;
+  --navy-blue: #1E2F97;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
+}
+
+.welcome__userCard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 84vh;
+  background-color: #ebeced8c;
+  margin: 0 20px;
+  height: 100%;
+}
+
+.nav{
+  padding: 20px;
+}
