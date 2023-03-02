@@ -4,7 +4,7 @@ import axios from 'axios'
 import UsersList from './components/UsersList'
 import Navbar from './components/Navbar'
 import ModalForm from './components/ModalForm'
-import WelcomeCard from './components/welcomeCard'
+import WelcomeCard from './components/WelcomeCard'
 
 //La url base de la api que se va a utilizar
 
