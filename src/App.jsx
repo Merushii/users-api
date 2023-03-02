@@ -7,8 +7,9 @@ import ModalForm from './components/ModalForm'
 import WelcomeCard from './components/welcomeCard'
 
 //La url base de la api que se va a utilizar
-const URL_BASE = "https://users-crud.academlo.tech/"
+
 function App() {
+  const URL_BASE = "https://users-crud.academlo.tech/"
   //Estado donde se guardan todos los usuarios
   const [users, setUsers] = useState([])
   //Estado que indica si el modal esta visible o no asignando un false por defecto, para ocultar el modal
@@ -23,7 +24,7 @@ function App() {
   const createUser = (data) => {
     axios.post(`${URL_BASE}users/`, data)
     //Si la peticion es exitosa se ejecuta la funcion setUsers para cambiar el valor de users
-      .then((res) => {
+      .then(() => {
         getAllUsers()
         handleClickShowModal()
       })
