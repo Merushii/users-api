@@ -36,9 +36,14 @@ const ModalForm = ({isShowModal, handleClickShowModal, createUser, updatingUser,
   return (
     <section className={`modalForm ${isShowModal ? "activeForm" : ""}`}>
       {/* Formulario */}
+      
       <form onSubmit={handleSubmit(submit)} className='modalForm__form'>
-        <h3 className='modalForm__title'>{updatingUser ? "Edit user" : "New User"}</h3>
-        <i onClick={handleClickClose} className='modalForm__title bx bx-x-circle'></i>
+      <div className="modalForm__header">
+        
+          <h3 className='modalForm__title'>{updatingUser ? "Edit user" : "New User"}</h3>
+          <i onClick={handleClickClose} className='modalForm__title bx bx-x-circle'></i>
+      </div>
+        
         <div className='modalForm__div'>
           <label className='modalForm__label' htmlFor="">First name:</label>
           <input className='modalForm__input' type="text" {...register("first_name")}/>

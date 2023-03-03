@@ -18,12 +18,45 @@
   background-color: white;
   font-family: cursive;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
+.modalForm__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modalForm__header i{
+  font-size: 30px;
+}
+
+.modalForm__header i:hover{
+  color: var(--blue-sky);
+  cursor: pointer;
+}
 h3{
   margin: 0;
 }
 
 .modalForm__input{
   outline: none;
+}
+
+.modalForm__btn{
+  background-color: var(--navy-blue);
+  margin: 5px auto;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.modalForm__btn:hover{
+  cursor: pointer;
+  background-color: var(--blue-sky);
 }
